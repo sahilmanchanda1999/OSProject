@@ -46,5 +46,23 @@ int main()
 	s3.resource_paper=0;
 	s3.resource_pen=0;
 	s3.resource_question_paper=0;
+	
+	do
+	{
+		int a,b;
+		cout<<"1.Pen"<<endl;
+		cout<<"2.Paper"<<endl;
+		cout<<"3.Question Paper"<<endl;
+		cout<<"Select any two items to be placed on the shared table:"<<endl;
+		cin>>a>>b;	
+		if(a==1 && b==2  && s3.resource_all_resources==0)
+		{
+			student_process_three();
+		}
+		if(a==2 && b==1  && s3.resource_all_resources==0)
+		{
+			student_process_three();
+		}
+}
 
 }
