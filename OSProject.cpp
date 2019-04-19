@@ -63,6 +63,27 @@ int main()
 		{
 			student_process_three();
 		}
+		if(a==2 && b==3  && s1.resource_all_resources==0)
+		{
+			student_process_one();
+		}
+		if(a==3 && b==2  && s1.resource_all_resources==0)
+		{
+			student_process_one();
+		}
+		if(a==1 && b==3 && s2.resource_all_resources==0)
+		{
+			student_process_two();
+		}
+		if(a==3 && b==1 && s2.resource_all_resources==0)
+		{
+			student_process_two();
+		}
+	}
+	while(s1.resource_all_resources==0||s2.resource_all_resources==0||s3.resource_all_resources==0);
+	cout<<"All Student Processes Completed";
+	getch();
 }
 
-}
+
+
